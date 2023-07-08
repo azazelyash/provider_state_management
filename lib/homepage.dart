@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_practice/selection_button/selection_button_ui.dart';
-import 'package:provider_practice/slider_screen/slider_ui.dart';
+// import 'package:provider_practice/slider_screen/slider_ui.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,11 +20,11 @@ class HomePage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const SliderScreen(),
-                    ),
-                  );
+                  // Navigator.of(context).push(
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SliderScreen(),
+                  //   ),
+                  // );
                 },
                 child: const Text("Slider Example"),
               ),
