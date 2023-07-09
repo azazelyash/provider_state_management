@@ -12,10 +12,13 @@ class SeatWidget extends StatefulWidget {
     Key? key,
     required this.seatIndex,
     required this.seatType,
+    this.searchBarText,
   }) : super(key: ValueKey(seatIndex));
 
   final int seatIndex;
   final String seatType;
+
+  final String? searchBarText;
 
   @override
   State<SeatWidget> createState() => _SeatWidgetState();
@@ -29,7 +32,6 @@ class _SeatWidgetState extends State<SeatWidget> with AutomaticKeepAliveClientMi
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     seat = Seat(seatIndex: widget.seatIndex, seatType: widget.seatType);
   }
@@ -53,6 +55,18 @@ class _SeatWidgetState extends State<SeatWidget> with AutomaticKeepAliveClientMi
             width: 60,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                BoxShadow(
+                  color: (widget.searchBarText == widget.seatIndex.toString()) ? Colors.blue.withOpacity(0.5) : Colors.transparent,
+                  spreadRadius: 1,
+                  blurRadius: 2,
+                  offset: const Offset(0, 1),
+                ),
+              ],
+              border: Border.all(
+                color: (widget.searchBarText == widget.seatIndex.toString()) ? const Color(0xff126DCA) : Colors.transparent,
+                width: 2,
+              ),
               color: (provider.selectedSeats.contains(seat)) ? const Color(0xff126DCA) : const Color(0xffCEEAFF),
             ),
             child: Column(

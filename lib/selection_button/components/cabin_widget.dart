@@ -6,9 +6,11 @@ class CabinWidget extends StatelessWidget {
   const CabinWidget({
     super.key,
     required this.index,
+    this.searchBarText,
   });
 
   final int index;
+  final String? searchBarText;
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +40,7 @@ class CabinWidget extends StatelessWidget {
                       child: Row(
                         children: [
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 1 + index * 8,
                             seatType: "Upper",
                           ),
@@ -45,6 +48,7 @@ class CabinWidget extends StatelessWidget {
                             width: 4,
                           ),
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 2 + index * 8,
                             seatType: "Middle",
                           ),
@@ -52,6 +56,7 @@ class CabinWidget extends StatelessWidget {
                             width: 4,
                           ),
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 3 + index * 8,
                             seatType: "Lower",
                           ),
@@ -77,6 +82,7 @@ class CabinWidget extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 5),
                       child: SeatWidget(
+                        searchBarText: searchBarText,
                         seatIndex: 7 + index * 8,
                         seatType: "Side Up",
                       ),
@@ -110,6 +116,7 @@ class CabinWidget extends StatelessWidget {
                       child: Row(
                         children: [
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 6 + index * 8,
                             seatType: "Upper",
                           ),
@@ -117,6 +124,7 @@ class CabinWidget extends StatelessWidget {
                             width: 4,
                           ),
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 5 + index * 8,
                             seatType: "Middle",
                           ),
@@ -124,6 +132,7 @@ class CabinWidget extends StatelessWidget {
                             width: 4,
                           ),
                           SeatWidget(
+                            searchBarText: searchBarText,
                             seatIndex: 4 + index * 8,
                             seatType: "Lower",
                           ),
@@ -149,6 +158,7 @@ class CabinWidget extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(bottom: 5),
                       child: SeatWidget(
+                        searchBarText: searchBarText,
                         seatIndex: 8 + index * 8,
                         seatType: "Side Low",
                       ),
