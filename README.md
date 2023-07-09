@@ -1,16 +1,34 @@
-# provider_practice
+# Seat Selection App
 
-A new Flutter project.
+The Seat Selection App is a Flutter application that allows users to select seats in a cabin-like environment. It provides an interactive interface where users can choose seats and see their selections visually.
+
+## Features
+
+- Display of cabin-like layout with seats arranged in rows
+- Seat selection by tapping on individual seats
+- Visual indication of selected seats
+- Scrollable view to navigate through the cabin
+- Search functionality to highlight specific seats
+
+## Screenshots
+
+<img src = "assets/seatSelectionScreen.jpeg" alt = "Seat Selection Screen" width = 300>
+<img src = "assets/confirmSelection.jpeg" alt = "Confirm Selection Screen" width = 300>
+
+## Technologies Used
+
+- Flutter: A cross-platform framework for building mobile applications
+- Provider: A state management library for managing application state
+- Dart: The programming language used for developing Flutter applications
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with the Seat Selection App, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Install Flutter by following the official Flutter installation guide: [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Clone the repository:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```shell
+   git clone https://github.com/your-username/seat-selection-app.git
+   ```
