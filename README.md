@@ -20,14 +20,4 @@ The Seat Selection App is a Flutter application that allows users to select seat
 - Provider: A state management library for managing application state
 - Dart: The programming language used for developing Flutter applications
 
-## Getting Started
 
-To get started with the Seat Selection App, follow these steps:
-
-1. Install Flutter by following the official Flutter installation guide: [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
-
-2. Clone the repository:
-
-   ```shell
-   git clone https://github.com/your-username/seat-selection-app.git
-   ```
